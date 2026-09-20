@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "hotspots": [
+    {
+      "id": "malibongwe-drive-du-noon",
+      "road": "Malibongwe Drive (M12)",
+      "risk": 0.7,
+      "rationale": "AVOID tier. Sustained, repeatedly documented smash-and-grab activity on the M12 where it passes Du Noon, with attackers working the traffic and withdrawing into the adjacent settlement. The SAPS layer cannot see it: there is no Du Noon police station in the national workbook, and the 6 km station-radius disc paints these cells with Table View precinct's exposure-normalised 0.184 — as measured, not merely decayed, so this stays invisible however the age-decay question is settled. Verified blind in production on 2026-09-20.",
+      "sources": [
+        "https://www.iol.co.za/capeargus/news/beware-crime-fighters-warn-about-n7-smash-and-grab-hotspot-14cb6d78-9ca2-4f51-98e7-d7a846a42584",
+        "https://www.capetownetc.com/news/watch-smash-and-grab-spree-on-the-n7-captured-by-drone/",
+        "https://northernnews.co.za/northern-news/news/2026-06-02-parow-cpf-issues-warning-on-smash-and-grab-hotspots/"
+      ],
+      "reviewed_on": "2026-09-20",
+      "corridor": [
+        [-33.79754, 18.5351],
+        [-33.80124, 18.53573],
+        [-33.80351, 18.53924],
+        [-33.80611, 18.54287],
+        [-33.80902, 18.54687],
+        [-33.8098, 18.54791]
+      ]
+    },
+    {
+      "id": "n7-melkbosstrand-killarney",
+      "road": "N7 between Melkbosstrand and Killarney Gardens",
+      "risk": 0.7,
+      "rationale": "AVOID tier. A dark, poorly lit freeway stretch worked from the settlements alongside it: attackers stone passing vehicles and lay objects across the carriageway to force a stop, then rob or hijack the stopped driver. Weekend Argus reports motorists warned off 'the N7 routes towards Potsdam Road, Malibongwe Drive and Sandown Road', stoned 'near the newly built interchange'; 2oceansvibe, citing News24, names 'the N7 between Melkbosstrand and the Milnerton off-ramps'. The hazard attaches to the road's permanent geometry, not to any one event. Nine of its cells have NO SAPS station within the 6 km allocation radius at all; the rest carry Table View's 0.184 as measured. Verified blind in production on 2026-09-20.",
+      "sources": [
+        "https://iol.co.za/weekend-argus/news/2022-10-22-n7-crime-warning-to-drivers/",
+        "https://www.2oceansvibe.com/2022/10/20/this-cape-town-highway-that-has-become-a-particularly-dangerous-load-shedding-crime-hotspot/",
+        "https://www.capetown.gov.za/Media-and-news/Smash-and-grab%20reports%20highlight%20hotspots",
+        "https://tabletalk.co.za/news/2024-07-24-n7-smash-and-grab-video-shocker/"
+      ],
+      "reviewed_on": "2026-09-20",
+      "corridor": [
+        [-33.75175, 18.54642],
+        [-33.76391, 18.54741],
+        [-33.77869, 18.5486],
+        [-33.79037, 18.54832],
+        [-33.80324, 18.54756],
+        [-33.80828, 18.54572],
+        [-33.8098, 18.54791],
+        [-33.81324, 18.5465],
+        [-33.82711, 18.54095],
+        [-33.836, 18.5376]
+      ]
+    },
+    {
+      "id": "potsdam-road",
+      "road": "Potsdam Road (M5)",
+      "risk": 0.7,
+      "rationale": "AVOID tier. The M5 link between the N7 and Killarney Gardens, named by Weekend Argus alongside Malibongwe Drive as a route motorists are warned off after dark, with drivers 'attacked and robbed' and vehicles stoned. It carries the same traffic off the same interchange as the two entries above and runs the same settlement edge, so it is the obvious detour a driver avoiding Malibongwe Drive would take — listing the pair without it would route people onto an equally exposed road. Its cells hold Table View and Milnerton values of 0.184–0.206 as measured. Verified blind in production on 2026-09-20.",
+      "sources": [
+        "https://iol.co.za/weekend-argus/news/2022-10-22-n7-crime-warning-to-drivers/",
+        "https://www.2oceansvibe.com/2022/10/20/this-cape-town-highway-that-has-become-a-particularly-dangerous-load-shedding-crime-hotspot/"
+      ],
+      "reviewed_on": "2026-09-20",
+      "corridor": [
+        [-33.81215, 18.54047],
+        [-33.81893, 18.53478],
+        [-33.8264, 18.52939],
+        [-33.8346, 18.52586]
+      ]
+    },
+    {
+      "id": "n2-jakes-gerwel-to-mew-way",
+      "road": "N2 between Jakes Gerwel Drive and Mew Way",
+      "risk": 0.45,
+      "rationale": "ADVISE tier — the single most documented road-crime corridor in Cape Town, and one almost no driver can avoid: it carries essentially every route to the airport. The City is spending R115m on a 3 m security wall along it. City research attributes 46.7% of all Cape Town road crimes against individuals to this stretch (718 incidents 2016–2024: 279 hijackings, 268 smash-and-grabs, 156 shootings, 15 CIT robberies), and Metro Police logged 2,215 incidents on the N2/R300 between Nov 2024 and Nov 2025. SAPS scores it 0.725 as measured, so with avoidance gated on the measured value the router already routes around it where it can; this entry exists so the driver is TOLD which road, which the SAPS layer cannot do. Deliberately advisory: forcing avoidance onto an unavoidable freeway would spend the diversification budget and return worse alternatives.",
+      "sources": [
+        "https://www.dailymaverick.co.za/article/2026-01-29-cape-town-to-spend-r115m-on-wall-to-protect-motorists-on-n2-hell-run/",
+        "https://iol.co.za/weekend-argus/2025-11-19-navigating-the-dangers-of-the-n2-and-r300-a-look-at-the-capes-hell-way/",
+        "https://www.capetownetc.com/news/these-cape-town-roads-are-smash-and-grab-danger-zones/"
+      ],
+      "reviewed_on": "2026-09-20",
+      "corridor": [
+        [-33.95474, 18.54106],
+        [-33.95949, 18.55498],
+        [-33.96291, 18.56632],
+        [-33.96981, 18.57578],
+        [-33.97803, 18.58304],
+        [-33.98493, 18.59198],
+        [-33.98957, 18.60338],
+        [-33.99426, 18.61529],
+        [-33.99917, 18.62785],
+        [-34.00428, 18.64082],
+        [-34.00973, 18.65345]
+      ]
+    },
+    {
+      "id": "jakes-gerwel-drive",
+      "road": "Jakes Gerwel Drive (M7)",
+      "risk": 0.45,
+      "rationale": "ADVISE tier. The City names the Bonteheuwel–Langa corridor as 'the biggest hotspot' for smash-and-grab in Cape Town. SAPS already scores these cells 0.725 as measured, so this entry adds the named warning and the badge veto rather than the avoidance, which the official layer now drives by itself.",
+      "sources": [
+        "https://www.capetownetc.com/news/these-cape-town-roads-are-smash-and-grab-danger-zones/",
+        "https://www.capetown.gov.za/Media-and-news/Smash-and-grab%20reports%20highlight%20hotspots"
+      ],
+      "reviewed_on": "2026-09-20",
+      "corridor": [
+        [-33.92717, 18.54368],
+        [-33.93295, 18.54356],
+        [-33.93816, 18.54319],
+        [-33.94395, 18.54289],
+        [-33.9524, 18.54266],
+        [-33.95939, 18.54147],
+        [-33.96276, 18.54047],
+        [-33.96672, 18.5392],
+        [-33.96874, 18.5386]
+      ]
+    },
+    {
+      "id": "borcherds-quarry-road",
+      "road": "Borcherd's Quarry Road (M22)",
+      "risk": 0.4,
+      "rationale": "ADVISE tier. The N2 off-ramp onto Borcherd's Quarry Road is named by the City among the intersections where motorists should take extra care, and SAPS figures flag it for smash-and-grabs at red lights, overwhelmingly between 18:00 and 04:00. Measured SAPS risk here is 0.725, so this entry supplies the road name for the warning.",
+      "sources": [
+        "https://iol.co.za/capeargus/news/2021-11-26-motorists-warned-of-smash-and-grabs-at-borcherds-quarry-road-turn-off-in-nyanga/",
+        "https://www.capetownetc.com/news/these-cape-town-roads-are-smash-and-grab-danger-zones/"
+      ],
+      "reviewed_on": "2026-09-20",
+      "corridor": [
+        [-33.96871, 18.58981],
+        [-33.96557, 18.59068],
+        [-33.96251, 18.59168],
+        [-33.95959, 18.59058],
+        [-33.95853, 18.58994]
+      ]
+    },
+    {
+      "id": "r300",
+      "road": "R300",
+      "risk": 0.4,
+      "rationale": "ADVISE tier. Counted with the N2 in the 2,215 Metro Police incidents logged between Nov 2024 and Nov 2025, with documented stone- and concrete-block attacks forcing motorists to stop — a fatal shooting on 28 July 2025 and a serious injury on 1 August. The City names the N2 off-ramps onto the R300 on both the Bellville and Mitchells Plain sides. Advisory rather than avoid: the R300 is the main north–south link across the Cape Flats and the realistic alternatives are the roads listed beside it here.",
+      "sources": [
+        "https://iol.co.za/weekend-argus/2025-11-19-navigating-the-dangers-of-the-n2-and-r300-a-look-at-the-capes-hell-way/",
+        "https://www.capetownetc.com/crime/warning-issued-over-alleged-hijacking-tactic-on-cape-towns-r300/",
+        "https://www.vfplus.org.za/media-releases/action-urgently-needed-to-stop-violent-attacks-and-stone-throwing-on-the-n2-and-r300/"
+      ],
+      "reviewed_on": "2026-09-20",
+      "corridor": [
+        [-34.00162, 18.63311],
+        [-33.99552, 18.63864],
+        [-33.98881, 18.64574],
+        [-33.98327, 18.65098],
+        [-33.97469, 18.65317],
+        [-33.96544, 18.65503],
+        [-33.95655, 18.65686],
+        [-33.94666, 18.65887],
+        [-33.9355, 18.66115],
+        [-33.92536, 18.66321],
+        [-33.91771, 18.66642],
+        [-33.9104, 18.67069],
+        [-33.90211, 18.67552],
+        [-33.89315, 18.67724],
+        [-33.89088, 18.67657]
+      ]
+    },
+    {
+      "id": "mew-way",
+      "road": "Mew Way (M44)",
+      "risk": 0.4,
+      "rationale": "ADVISE tier. Named by the City among the high-alert stretches alongside Borcherd's Quarry and Jakes Gerwel Drive, and the eastern anchor of the N2 corridor the security wall is being built along. SAPS measures these cells at 0.675 — above the hot threshold as measured, so avoidance is already driven by the official layer; this entry names the road for the driver.",
+      "sources": [
+        "https://www.capetownetc.com/news/cape-town-pushes-ahead-with-r180m-n2-security-wall-to-combat-crime/",
+        "https://www.dailymaverick.co.za/article/2026-01-29-cape-town-to-spend-r115m-on-wall-to-protect-motorists-on-n2-hell-run/"
+      ],
+      "reviewed_on": "2026-09-20",
+      "corridor": [
+        [-34.0166, 18.65625],
+        [-34.01866, 18.65312],
+        [-34.02265, 18.65178],
+        [-34.02733, 18.65233],
+        [-34.03184, 18.65287],
+        [-34.03658, 18.65343],
+        [-34.04131, 18.65404],
+        [-34.04501, 18.65565]
+      ]
+    },
+    {
+      "id": "baden-powell-drive",
+      "road": "Baden Powell Drive (R310)",
+      "risk": 0.4,
+      "rationale": "ADVISE tier. An isolated coastal road with almost no frontage for its whole length, named by Harare police as a hijacking hotspot and with repeated documented robberies of motorists who stopped — including at the Wolfgat viewsite and near Monwabisi, where a sand closure forcing a detour preceded a hijacking. 2026 reporting places attacks around the Macassar Bridge. The ambush geography is permanent, which is what earns it a place here; SAPS measures 0.675 so the official layer drives avoidance.",
+      "sources": [
+        "https://novanews.co.za/cityvision/danger-motorists-be-warned-20220216/",
+        "https://www.ewn.co.za/2026/03/16/n2-near-cape-town-airport-hit-by-rock-throwing-attacks-gun-threats",
+        "https://iol.co.za/capeargus/news/2024-03-26-city-battles-to-repair-road-as-trench-warfare-flares-on-baden-powell-drive/"
+      ],
+      "reviewed_on": "2026-09-20",
+      "corridor": [
+        [-34.08548, 18.55282],
+        [-34.08093, 18.5584],
+        [-34.0789, 18.56691],
+        [-34.07637, 18.57514],
+        [-34.0757, 18.58481],
+        [-34.0745, 18.59371],
+        [-34.07251, 18.60342],
+        [-34.07097, 18.61337],
+        [-34.07141, 18.62318],
+        [-34.07198, 18.63334],
+        [-34.072, 18.64378],
+        [-34.07237, 18.65398],
+        [-34.07211, 18.6648],
+        [-34.07111, 18.6744],
+        [-34.07174, 18.68416],
+        [-34.06919, 18.69209],
+        [-34.06687, 18.70081],
+        [-34.06193, 18.70695],
+        [-34.05718, 18.71279],
+        [-34.05064, 18.71728],
+        [-34.04847, 18.71851]
+      ]
+    },
+    {
+      "id": "voortrekker-road-parow",
+      "road": "Voortrekker Road (R102) through Parow",
+      "risk": 0.35,
+      "rationale": "ADVISE tier, and a deliberate check on coverage bias: road crime against drivers is not confined to the Cape Flats, and a register that listed only township roads would be reporting the news cycle rather than the hazard. Parow was added to the City's smash-and-grab hotspot list in 2026, with the Parow CPF naming the Voortrekker Road intersections at De la Rey Street, Jan van Riebeeck Drive and Jan Smuts Road.",
+      "sources": [
+        "https://novanews.co.za/tygerburger/parow-added-to-cape-towns-growing-list-of-smash-and-grab-hotspots/",
+        "https://northernnews.co.za/northern-news/news/2026-06-02-parow-cpf-issues-warning-on-smash-and-grab-hotspots/"
+      ],
+      "reviewed_on": "2026-09-20",
+      "corridor": [
+        [-33.90499, 18.59134],
+        [-33.90419, 18.59575],
+        [-33.90336, 18.60048],
+        [-33.90311, 18.60185]
+      ]
+    },
+    {
+      "id": "stellenbosch-arterial-belhar",
+      "road": "Stellenbosch Arterial (M12)",
+      "risk": 0.35,
+      "rationale": "ADVISE tier. The City names the traffic lights near the Stellenbosch Arterial fire station on the Belhar side among the locations of concern for smash-and-grab. Stationary traffic at a signalised junction is the standing condition the attacks depend on, which is why this is a road entry rather than an area one.",
+      "sources": [
+        "https://www.capetownetc.com/news/these-cape-town-roads-are-smash-and-grab-danger-zones/",
+        "https://content.voteda.org/blog/municipality_news/city-flags-new-smash-grab-hotspot/"
+      ],
+      "reviewed_on": "2026-09-20",
+      "corridor": [
+        [-33.95213, 18.6265],
+        [-33.95332, 18.64184],
+        [-33.95409, 18.65184],
+        [-33.95484, 18.6615],
+        [-33.9556, 18.67135]
+      ]
+    }
+  ]
+}

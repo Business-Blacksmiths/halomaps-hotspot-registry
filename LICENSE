@@ -1,0 +1,30 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Business Blacksmiths
+
+The data in this repository — principally corridors.json — is licensed under the
+Creative Commons Attribution 4.0 International License.
+
+You are free to share and adapt the material for any purpose, including
+commercially, provided you give appropriate credit, link to the licence, and
+indicate if changes were made.
+
+  Summary:    https://creativecommons.org/licenses/by/4.0/
+  Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+The scripts and schema in this repository (validate.py, schema.json, and the
+workflow definitions) are also made available under the same terms.
+
+DISCLAIMER
+
+This dataset is a curated, best-effort reading of published reporting. It is
+NOT an official, government or law-enforcement source, and it is not derived
+from privileged data.
+
+It carries no warranty of any kind. It is not a guarantee of anyone's safety.
+The absence of a road from this register means nothing about that road, and the
+presence of one is a statement about documented risk to drivers on a stretch of
+public road — never a statement about the people who live near it.
+
+Do not present this data as authoritative, and do not use it to make decisions
+about individuals, insurance, credit, property, or access to services.

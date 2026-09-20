@@ -1,0 +1,54 @@
+name: Validate registry
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: corridors.json
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # validate.py has no dependencies on purpose, so a contributor can run
+      # exactly what CI runs without installing anything.
+      - name: Validate against the authoring rules
+        run: python3 validate.py
+
+      - name: Check every source URL is reachable
+        # Advisory only: a source can 403 a CI runner while being perfectly
+        # readable in a browser, and a dead link is a reason to review an entry,
+        # not to block the repository.
+        continue-on-error: true
+        run: |
+          python3 - <<'PY'
+          import json, urllib.request, urllib.error
+          seen, bad = set(), []
+          for h in json.load(open("corridors.json"))["hotspots"]:
+              for url in h["sources"]:
+                  if url in seen:
+                      continue
+                  seen.add(url)
+                  req = urllib.request.Request(url, method="HEAD", headers={
+                      "User-Agent": "Mozilla/5.0 (compatible; halomaps-hotspot-registry link check)"})
+                  try:
+                      urllib.request.urlopen(req, timeout=20)
+                  except urllib.error.HTTPError as e:
+                      if e.code in (401, 403, 405, 429):
+                          continue  # bot-walled, not dead
+                      bad.append(f"{e.code} {url}")
+                  except Exception as e:
+                      bad.append(f"{type(e).__name__} {url}")
+          print(f"checked {len(seen)} distinct source URLs")
+          for b in bad:
+              print(f"  unreachable: {b}")
+          PY

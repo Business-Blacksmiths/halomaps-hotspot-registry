@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Business-Blacksmiths/halomaps-hotspot-registry/schema.json",
+  "title": "HaloMaps hotspot registry",
+  "description": "Curated road corridors where drivers face elevated vehicle-crime risk. Corridors are LINEAR traces of a road. There is deliberately no polygon or area type — see CONTRIBUTING.md rule 1c. validate.py is the authoritative checker; this schema exists for editor support and third-party consumers.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "hotspots"],
+  "properties": {
+    "schema_version": {
+      "const": 1,
+      "description": "Bumped only for a breaking change to this shape."
+    },
+    "hotspots": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/corridor" }
+    }
+  },
+  "$defs": {
+    "corridor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "road", "risk", "rationale", "sources", "reviewed_on", "corridor"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "description": "Stable kebab-case slug. Unique across the file; used to withdraw a corridor as a unit."
+        },
+        "road": {
+          "type": "string",
+          "minLength": 3,
+          "description": "Shown VERBATIM to the driver. Names a ROAD, never a settlement (rule 2). A place name may bound a stretch, e.g. 'N7 between Melkbosstrand and Killarney Gardens'."
+        },
+        "risk": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 1,
+          "description": "Also selects the tier: >= 0.5 avoids and warns; < 0.5 warns only."
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 40,
+          "description": "Why this corridor is listed, in the curator's own words."
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "format": "uri", "pattern": "^https?://" },
+          "description": "Published evidence. An entry nobody can check is an opinion, not a dataset."
+        },
+        "reviewed_on": {
+          "type": "string",
+          "format": "date",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "description": "When a human last confirmed the entry. Must not be in the future."
+        },
+        "corridor": {
+          "type": "array",
+          "minItems": 2,
+          "description": "The road's shape as [latitude, longitude] pairs, bounded to South Africa.",
+          "items": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "prefixItems": [
+              { "type": "number", "minimum": -35.0, "maximum": -22.0, "description": "latitude" },
+              { "type": "number", "minimum": 16.0, "maximum": 33.0, "description": "longitude" }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
