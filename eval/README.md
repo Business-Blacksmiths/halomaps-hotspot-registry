@@ -28,7 +28,7 @@ for the GeoJSON — and add an entry:
 "dunoon-sunningdale-canalwalk/sat-02": {
   "best": "94995abd",                          // the card you would drive
   "order": ["94995abd", "dbfe5190", "a19b0939"], // every card, best first (optional)
-  "rationale": "R27 then Otto du Plessis; the 0.7 km of Potsdam Road is the interchange, not the stretch the register warns about. At 02:00 the 2.5 minutes are worth it.",
+  "rationale": "The Koeberg Road card; its 0.7 km of Potsdam Road is the interchange, not the stretch the register warns about. At 02:00 the extra 2.5 minutes are worth staying off Malibongwe past Du Noon.",
   "sources": ["https://…"],                    // optional, if you are citing something
   "labelled_by": "your-github-handle",
   "labelled_on": "2026-09-21"
@@ -38,6 +38,10 @@ for the GeoJSON — and add an entry:
 - `best` and `order` use the 8-character card keys from `trials.json`. A key is a
   hash of the route's geometry, so it stays the same until the road network or the
   routing engine changes that route.
+- Look at the geometry before naming a road in your rationale — a trial's `why`
+  is a hint written before the routes were recorded, and the polyline is what the
+  app actually drives. `.claude/skills/hotspot-registry/scripts/trial.py <key>
+  --geojson out.geojson` renders the cards for geojson.io.
 - `rationale` is required and must actually explain the choice (40+ characters).
   It is what a reviewer — and the next contributor who disagrees — reads.
 - A trial marked `"avoidable": true` has one card that is at least 1 km cleaner of

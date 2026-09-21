@@ -12,7 +12,7 @@
         -33.8926,
         18.5106
       ],
-      "why": "The PR #82 defect trip: fastest rides Malibongwe (M12) past Du Noon; the R27/Otto du Plessis alternative is clean.",
+      "why": "The PR #82 defect trip: the fastest card rides Malibongwe (M12) and the N7 past Du Noon; the Koeberg Road cards stay off it (they clip the Potsdam Road interchange cell).",
       "control": false
     },
     "scenario": {
@@ -115,7 +115,7 @@
         -33.8926,
         18.5106
       ],
-      "why": "The PR #82 defect trip: fastest rides Malibongwe (M12) past Du Noon; the R27/Otto du Plessis alternative is clean.",
+      "why": "The PR #82 defect trip: the fastest card rides Malibongwe (M12) and the N7 past Du Noon; the Koeberg Road cards stay off it (they clip the Potsdam Road interchange cell).",
       "control": false
     },
     "scenario": {
