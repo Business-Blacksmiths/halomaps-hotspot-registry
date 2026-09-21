@@ -175,6 +175,12 @@ python3 validate.py
 
 No dependencies beyond Python 3. CI runs the same script.
 
+We recommend making changes with a coding agent: the repository ships a skill
+([`.claude/skills/hotspot-registry`](.claude/skills/hotspot-registry/SKILL.md),
+picked up automatically by Claude Code) that walks the agent through these rules,
+renders a trial's routes, formats the entry and runs the validator — while
+leaving the evidence and the preference to you.
+
 ## What happens after it merges
 
 Merging here does **not** deploy anything. Consumers pin an exact commit of this
