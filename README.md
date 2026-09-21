@@ -33,6 +33,14 @@ The schema has no polygon type. That is not an oversight, and pull requests
 adding one will be declined. See [CONTRIBUTING.md](CONTRIBUTING.md) for the full
 rules.
 
+## Route-choice labels (`eval/`)
+
+The register says *where* to be careful. [`eval/`](eval/) holds the community's
+answer to a harder question — between the real candidate routes for a trip, which
+would a careful local driver take at this hour? — with a rationale per label.
+HaloMaps scores every change to its route chooser against these before it ships.
+See [`eval/README.md`](eval/README.md).
+
 ## The data
 
 Everything lives in [`corridors.json`](corridors.json), validated against
@@ -49,6 +57,8 @@ Everything lives in [`corridors.json`](corridors.json), validated against
       "rationale": "Why this is listed, in the curator's own words.",
       "sources": ["https://…"],          // published evidence, at least one
       "reviewed_on": "2026-09-20",       // when a human last confirmed it
+      "hours": ["18:00-05:59"],          // optional: when the hazard applies (SAST), or "always"
+      "mode": "forced_stop",             // optional: how drivers are attacked
       "corridor": [[-33.81215, 18.54047], [-33.8346, 18.52586]]   // [lat, lng]
     }
   ]

@@ -12,6 +12,8 @@
         "https://northernnews.co.za/northern-news/news/2026-06-02-parow-cpf-issues-warning-on-smash-and-grab-hotspots/"
       ],
       "reviewed_on": "2026-09-20",
+      "hours": "always",
+      "mode": "smash_and_grab",
       "corridor": [
         [-33.79754, 18.5351],
         [-33.80124, 18.53573],
@@ -33,6 +35,10 @@
         "https://tabletalk.co.za/news/2024-07-24-n7-smash-and-grab-video-shocker/"
       ],
       "reviewed_on": "2026-09-20",
+      "hours": [
+        "18:00-05:59"
+      ],
+      "mode": "forced_stop",
       "corridor": [
         [-33.75175, 18.54642],
         [-33.76391, 18.54741],
@@ -56,6 +62,10 @@
         "https://www.2oceansvibe.com/2022/10/20/this-cape-town-highway-that-has-become-a-particularly-dangerous-load-shedding-crime-hotspot/"
       ],
       "reviewed_on": "2026-09-20",
+      "hours": [
+        "18:00-05:59"
+      ],
+      "mode": "forced_stop",
       "corridor": [
         [-33.81215, 18.54047],
         [-33.81893, 18.53478],
@@ -74,6 +84,8 @@
         "https://www.capetownetc.com/news/these-cape-town-roads-are-smash-and-grab-danger-zones/"
       ],
       "reviewed_on": "2026-09-20",
+      "hours": "always",
+      "mode": "hijacking",
       "corridor": [
         [-33.95474, 18.54106],
         [-33.95949, 18.55498],
@@ -98,6 +110,8 @@
         "https://www.capetown.gov.za/Media-and-news/Smash-and-grab%20reports%20highlight%20hotspots"
       ],
       "reviewed_on": "2026-09-20",
+      "hours": "always",
+      "mode": "smash_and_grab",
       "corridor": [
         [-33.92717, 18.54368],
         [-33.93295, 18.54356],
@@ -120,6 +134,10 @@
         "https://www.capetownetc.com/news/these-cape-town-roads-are-smash-and-grab-danger-zones/"
       ],
       "reviewed_on": "2026-09-20",
+      "hours": [
+        "18:00-03:59"
+      ],
+      "mode": "smash_and_grab",
       "corridor": [
         [-33.96871, 18.58981],
         [-33.96557, 18.59068],
@@ -139,6 +157,8 @@
         "https://www.vfplus.org.za/media-releases/action-urgently-needed-to-stop-violent-attacks-and-stone-throwing-on-the-n2-and-r300/"
       ],
       "reviewed_on": "2026-09-20",
+      "hours": "always",
+      "mode": "forced_stop",
       "corridor": [
         [-34.00162, 18.63311],
         [-33.99552, 18.63864],
@@ -167,6 +187,8 @@
         "https://www.dailymaverick.co.za/article/2026-01-29-cape-town-to-spend-r115m-on-wall-to-protect-motorists-on-n2-hell-run/"
       ],
       "reviewed_on": "2026-09-20",
+      "hours": "always",
+      "mode": "unclear",
       "corridor": [
         [-34.0166, 18.65625],
         [-34.01866, 18.65312],
@@ -189,6 +211,8 @@
         "https://iol.co.za/capeargus/news/2024-03-26-city-battles-to-repair-road-as-trench-warfare-flares-on-baden-powell-drive/"
       ],
       "reviewed_on": "2026-09-20",
+      "hours": "always",
+      "mode": "hijacking",
       "corridor": [
         [-34.08548, 18.55282],
         [-34.08093, 18.5584],
@@ -223,6 +247,8 @@
         "https://northernnews.co.za/northern-news/news/2026-06-02-parow-cpf-issues-warning-on-smash-and-grab-hotspots/"
       ],
       "reviewed_on": "2026-09-20",
+      "hours": "always",
+      "mode": "smash_and_grab",
       "corridor": [
         [-33.90499, 18.59134],
         [-33.90419, 18.59575],
@@ -240,6 +266,8 @@
         "https://content.voteda.org/blog/municipality_news/city-flags-new-smash-grab-hotspot/"
       ],
       "reviewed_on": "2026-09-20",
+      "hours": "always",
+      "mode": "smash_and_grab",
       "corridor": [
         [-33.95213, 18.6265],
         [-33.95332, 18.64184],

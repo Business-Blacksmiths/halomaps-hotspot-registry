@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate corridors.json against the authoring rules in CONTRIBUTING.md.
+"""Validate corridors.json and eval/ against the authoring rules in CONTRIBUTING.md.
 
 Authoritative checker, and deliberately dependency-free so anyone can run it:
 
@@ -19,6 +19,7 @@ import sys
 ROOT = pathlib.Path(__file__).parent
 DATA = ROOT / "corridors.json"
 SCHEMA = ROOT / "schema.json"
+EVAL = ROOT / "eval"
 
 SCHEMA_VERSION = 1
 RISK_MAX = 1.0
@@ -26,6 +27,9 @@ AVOID_THRESHOLD = 0.5  # >= is avoid tier, < is advisory. Mirrors the consumer.
 ZA_LAT = (-35.0, -22.0)
 ZA_LNG = (16.0, 33.0)
 SLUG = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
+WINDOW = re.compile(r"^([01]\d|2[0-3]):[0-5]\d-([01]\d|2[0-3]):[0-5]\d$")
+MODES = {"forced_stop", "smash_and_grab", "hijacking", "protest_blockade", "unclear"}
+CARD_KEY = re.compile(r"^[0-9a-f]{8}$")
 
 # Rule 2: the driver-facing name must be a road. These are settlements that have
 # appeared in drafts or reporting about listed corridors, so they are the ones
@@ -91,9 +95,18 @@ def check(data: dict) -> None:
             err(where, "must be an object")
             continue
 
-        extra = set(h) - {"id", "road", "risk", "rationale", "sources", "reviewed_on", "corridor"}
+        extra = set(h) - {"id", "road", "risk", "rationale", "sources", "reviewed_on", "corridor", "hours", "mode"}
         if extra:
             err(where, f"unknown field(s) {sorted(extra)} — the schema is closed on purpose")
+
+        # Rule 8: optional structured reading of the rationale.
+        hours = h.get("hours")
+        if hours is not None and hours != "always":
+            if not isinstance(hours, list) or not hours or not all(isinstance(w, str) and WINDOW.match(w) for w in hours):
+                err(where, f"hours {hours!r} must be \"always\" or a non-empty list of \"HH:MM-HH:MM\" windows")
+        mode = h.get("mode")
+        if mode is not None and mode not in MODES:
+            err(where, f"mode {mode!r} must be one of {sorted(MODES)}")
 
         hid = h.get("id", "")
         if not isinstance(hid, str) or not SLUG.match(hid):
@@ -168,6 +181,84 @@ def check(data: dict) -> None:
     print(f"{len(hotspots)} corridors: {tiers['avoid']} avoid, {tiers['advise']} advise")
 
 
+def check_eval() -> None:
+    """eval/labels.json must label cards that exist in eval/trials.json, with a
+    rationale and provenance; eval/incident_cases.json must be well-formed."""
+    labels_path = EVAL / "labels.json"
+    trials_path = EVAL / "trials.json"
+    if labels_path.exists():
+        if not trials_path.exists():
+            err("eval/labels.json", "exists without eval/trials.json — nothing to label against")
+        else:
+            try:
+                labels = json.loads(labels_path.read_text())
+                trials = json.loads(trials_path.read_text())
+            except json.JSONDecodeError as e:
+                err("eval", f"not valid JSON: {e}")
+                return
+            cards = {t["key"]: [c["key"] for c in t["cards"]] for t in trials}
+            today = datetime.date.today()
+            for key, lbl in labels.items():
+                where = f"eval/labels.json[{key}]"
+                if key not in cards:
+                    err(where, "no such trial in eval/trials.json — was it re-generated? (`just eval-publish`)")
+                    continue
+                if not isinstance(lbl, dict):
+                    err(where, "must be an object")
+                    continue
+                best = lbl.get("best")
+                if best not in cards[key]:
+                    err(where, f"best {best!r} is not one of this trial's cards {cards[key]}")
+                order = lbl.get("order")
+                if order is not None:
+                    if sorted(order) != sorted(cards[key]):
+                        err(where, f"order must list every card exactly once: {cards[key]}")
+                    elif order[0] != best:
+                        err(where, "order[0] must equal best")
+                rationale = lbl.get("rationale", "")
+                if not isinstance(rationale, str) or len(rationale.strip()) < 40:
+                    err(where, "rationale is required — say why this card, in your own words")
+                if not isinstance(lbl.get("labelled_by"), str) or not lbl["labelled_by"].strip():
+                    err(where, "labelled_by is required (your GitHub handle)")
+                try:
+                    if datetime.date.fromisoformat(lbl.get("labelled_on", "")) > today:
+                        err(where, "labelled_on is in the future")
+                except (TypeError, ValueError):
+                    err(where, f"labelled_on {lbl.get('labelled_on')!r} must be YYYY-MM-DD")
+                for s in lbl.get("sources", []) or []:
+                    if not isinstance(s, str) or not s.startswith(("http://", "https://")):
+                        err(where, f"source {s!r} must be a URL someone can open")
+            print(f"{len(labels)} route labels over {len(trials)} trials")
+
+    cases_path = EVAL / "incident_cases.json"
+    if cases_path.exists():
+        try:
+            cases = json.loads(cases_path.read_text())
+        except json.JSONDecodeError as e:
+            err("eval/incident_cases.json", f"not valid JSON: {e}")
+            return
+        types = {"hijack", "smash_and_grab", "protest_action", "debris", "crash", "stalled_vehicle", "other", ""}
+        seen = set()
+        for i, c in enumerate(cases):
+            where = f"eval/incident_cases.json[{i}] ({c.get('id', 'no id') if isinstance(c, dict) else '?'})"
+            if not isinstance(c, dict):
+                err(where, "must be an object")
+                continue
+            if c.get("id") in seen:
+                err(where, "duplicate id")
+            seen.add(c.get("id"))
+            for field in ("id", "description", "type", "severity", "age_hours", "truth_active", "truth_type", "injection"):
+                if field not in c:
+                    err(where, f"missing {field}")
+            if not isinstance(c.get("description"), str) or len(c.get("description", "")) < 10:
+                err(where, "description must be a real sentence")
+            if c.get("truth_type") not in types:
+                err(where, f"truth_type must be one of {sorted(types)}")
+            if not isinstance(c.get("truth_active"), bool) or not isinstance(c.get("injection"), bool):
+                err(where, "truth_active and injection must be true/false")
+        print(f"{len(cases)} incident cases")
+
+
 def main() -> int:
     try:
         data = json.loads(DATA.read_text())
@@ -180,6 +271,7 @@ def main() -> int:
 
     check_schema_constants()
     check(data)
+    check_eval()
 
     for w in warnings:
         print(f"warning: {w}")
