@@ -131,6 +131,32 @@ Trace the stretch the evidence describes, not the whole road. An entry that
 over-reaches re-creates, at smaller scale, exactly the over-painting this
 register exists to correct — and it makes the warning less believable.
 
+### 8. `hours` and `mode` — say when and how, if the evidence does
+
+Both are optional, and both are a *structured reading of your own rationale*, not
+new claims. Leave them out when the sources don't say.
+
+- `hours`: `"always"` when the pattern is not tied to a time of day, or a list of
+  SAST windows like `["18:00-03:59"]` (wrapping past midnight is fine) when the
+  sources do say — "overwhelmingly between 18:00 and 04:00", "after dark", "in
+  the morning rush". Absent means *unknown*, and consumers must treat it that
+  way; it never defaults to always.
+- `mode`: how drivers are attacked — `forced_stop` (objects, stones or debris
+  placed to make a driver stop), `smash_and_grab` (occupants robbed at lights or
+  in slow traffic), `hijacking`, `protest_blockade`, or `unclear` when the
+  sources describe a hotspot without saying how.
+
+The consuming app uses these to decide whether a warning applies *now* and to
+measure whether its AI can read the rationale as well as you can. If you think a
+window is wrong, change it and say why in the PR.
+
+## Labelling route trials
+
+The register says where to be careful. `eval/` asks the harder question — given
+the real candidate routes between two places, **which would a careful local driver
+take at this hour?** — and anyone can answer it, with a rationale. See
+[`eval/README.md`](eval/README.md).
+
 ## Tracing geometry
 
 Trace against a real routing engine rather than eyeballing coordinates, and
@@ -148,6 +174,12 @@ python3 validate.py
 ```
 
 No dependencies beyond Python 3. CI runs the same script.
+
+We recommend making changes with a coding agent: the repository ships a skill
+([`.claude/skills/hotspot-registry`](.claude/skills/hotspot-registry/SKILL.md),
+picked up automatically by Claude Code) that walks the agent through these rules,
+renders a trial's routes, formats the entry and runs the validator — while
+leaving the evidence and the preference to you.
 
 ## What happens after it merges
 

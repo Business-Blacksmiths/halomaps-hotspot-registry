@@ -33,6 +33,14 @@ The schema has no polygon type. That is not an oversight, and pull requests
 adding one will be declined. See [CONTRIBUTING.md](CONTRIBUTING.md) for the full
 rules.
 
+## Route-choice labels (`eval/`)
+
+The register says *where* to be careful. [`eval/`](eval/) holds the community's
+answer to a harder question — between the real candidate routes for a trip, which
+would a careful local driver take at this hour? — with a rationale per label.
+HaloMaps scores every change to its route chooser against these before it ships.
+See [`eval/README.md`](eval/README.md).
+
 ## The data
 
 Everything lives in [`corridors.json`](corridors.json), validated against
@@ -49,6 +57,8 @@ Everything lives in [`corridors.json`](corridors.json), validated against
       "rationale": "Why this is listed, in the curator's own words.",
       "sources": ["https://…"],          // published evidence, at least one
       "reviewed_on": "2026-09-20",       // when a human last confirmed it
+      "hours": ["18:00-05:59"],          // optional: when the hazard applies (SAST), or "always"
+      "mode": "forced_stop",             // optional: how drivers are attacked
       "corridor": [[-33.81215, 18.54047], [-33.8346, 18.52586]]   // [lat, lng]
     }
   ]
@@ -122,6 +132,29 @@ the same script CI runs.
 Corrections are especially welcome — an entry that is out of date is worse than
 no entry. If a corridor listed here has improved, say so and it will be
 withdrawn. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+### Recommended: contribute with a coding agent
+
+This repository ships a skill for AI coding agents —
+[`.claude/skills/hotspot-registry`](.claude/skills/hotspot-registry/SKILL.md) —
+and we recommend using one to make your change. Open the checkout in
+[Claude Code](https://claude.com/claude-code) (the skill is picked up
+automatically; other agents can be pointed at the `SKILL.md` file) and describe
+what you want in plain language:
+
+- *"Add the stretch of Voortrekker Road through Parow — here are two articles."*
+- *"I want to label the Sunningdale to Canal Walk trip at 2am; I'd take Koeberg
+  Road and stay off Malibongwe."*
+- *"Why would an entry for the Nyanga area be declined?"*
+
+The agent knows the rules (roads never areas, evidence before tier, `hours` and
+`mode` only from the sources), renders a trial's candidate routes so you can
+look at them (`scripts/trial.py`), formats the entry, runs `validate.py`, and
+drafts the PR. What it will not do is supply the evidence or the preference:
+sources come from you, and a route label records *your* choice with *your*
+rationale — the skill is explicit that the agent helps you say it, not decide
+it. You can of course edit the JSON by hand; the same rules and the same
+validator apply either way.
 
 ## Licence and disclaimer
 

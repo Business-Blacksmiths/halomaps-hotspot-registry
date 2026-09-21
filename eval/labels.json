@@ -1,0 +1,681 @@
+{
+  "dunoon-sunningdale-canalwalk/tue-10": {
+    "best": "94995abd",
+    "order": [
+      "94995abd",
+      "dbfe5190",
+      "a19b0939"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "dunoon-sunningdale-canalwalk/sat-02": {
+    "best": "94995abd",
+    "order": [
+      "94995abd",
+      "dbfe5190",
+      "a19b0939"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "dunoon-sunningdale-ctia/tue-10": {
+    "best": "fc698f9f",
+    "order": [
+      "fc698f9f",
+      "d66bef13",
+      "31ac00d0"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "dunoon-sunningdale-ctia/sat-02": {
+    "best": "fc698f9f",
+    "order": [
+      "fc698f9f",
+      "d66bef13",
+      "31ac00d0"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "dunoon-bigbay-tygervalley/tue-10": {
+    "best": "e959888d",
+    "order": [
+      "e959888d",
+      "930a22c5",
+      "e7b0f7ae"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "dunoon-bigbay-tygervalley/sat-02": {
+    "best": "e959888d",
+    "order": [
+      "e959888d",
+      "930a22c5",
+      "e7b0f7ae"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "dunoon-melkbos-cbd/tue-10": {
+    "best": "1700eef2",
+    "order": [
+      "1700eef2",
+      "d832f752",
+      "23a3dc1f"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "dunoon-melkbos-cbd/sat-02": {
+    "best": "1700eef2",
+    "order": [
+      "1700eef2",
+      "d832f752",
+      "23a3dc1f"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "dunoon-parklands-killarney/tue-10": {
+    "best": "e921c6cd",
+    "order": [
+      "e921c6cd"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "dunoon-parklands-killarney/sat-02": {
+    "best": "e921c6cd",
+    "order": [
+      "e921c6cd"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "dunoon-tableview-durbanville/tue-10": {
+    "best": "cd7630d5",
+    "order": [
+      "cd7630d5",
+      "ec59486e",
+      "10a4aba2"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "dunoon-tableview-durbanville/sat-02": {
+    "best": "cd7630d5",
+    "order": [
+      "cd7630d5",
+      "ec59486e",
+      "10a4aba2"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "n2-cbd-ctia/tue-10": {
+    "best": "b2c62e7a",
+    "order": [
+      "b2c62e7a",
+      "6a9e31b2",
+      "2756578b"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "n2-cbd-ctia/sat-02": {
+    "best": "b2c62e7a",
+    "order": [
+      "b2c62e7a",
+      "6a9e31b2",
+      "2756578b"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "n2-seapoint-ctia/tue-10": {
+    "best": "9cfaf57f",
+    "order": [
+      "9cfaf57f",
+      "e1648c07",
+      "bc726784"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "n2-seapoint-ctia/sat-02": {
+    "best": "9cfaf57f",
+    "order": [
+      "9cfaf57f",
+      "e1648c07",
+      "bc726784"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "n2-claremont-ctia/tue-10": {
+    "best": "e620d5d9",
+    "order": [
+      "e620d5d9",
+      "bbaf5c21",
+      "db47ba97"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "n2-claremont-ctia/sat-02": {
+    "best": "e620d5d9",
+    "order": [
+      "e620d5d9",
+      "bbaf5c21",
+      "db47ba97"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "n2-ctia-somersetwest/tue-10": {
+    "best": "b9860dca",
+    "order": [
+      "b9860dca",
+      "2c41284e",
+      "75620e87"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "n2-ctia-somersetwest/sat-02": {
+    "best": "b9860dca",
+    "order": [
+      "b9860dca",
+      "2c41284e",
+      "75620e87"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "n2-pinelands-khayelitsha/tue-10": {
+    "best": "e1b079b7",
+    "order": [
+      "e1b079b7",
+      "c354a895",
+      "fe4df388"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "n2-pinelands-khayelitsha/sat-02": {
+    "best": "e1b079b7",
+    "order": [
+      "e1b079b7",
+      "c354a895",
+      "fe4df388"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "n2-athlone-ctia/tue-10": {
+    "best": "6726ca49",
+    "order": [
+      "6726ca49",
+      "6c1030e9",
+      "cde6fb2f"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "n2-athlone-ctia/sat-02": {
+    "best": "6726ca49",
+    "order": [
+      "6726ca49",
+      "cde6fb2f",
+      "6c1030e9"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "m7-goodwood-wynberg/tue-10": {
+    "best": "5a6196d7",
+    "order": [
+      "5a6196d7",
+      "9914d2bd",
+      "f92e3a9e"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "m7-goodwood-wynberg/sat-02": {
+    "best": "5a6196d7",
+    "order": [
+      "5a6196d7",
+      "9914d2bd",
+      "f92e3a9e"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "m7-epping-muizenberg/tue-10": {
+    "best": "f40d7aec",
+    "order": [
+      "f40d7aec",
+      "66fbfa42",
+      "28c34add"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "m7-epping-muizenberg/sat-02": {
+    "best": "f40d7aec",
+    "order": [
+      "f40d7aec",
+      "66fbfa42",
+      "28c34add"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "r102-goodwood-bellville/tue-10": {
+    "best": "557c0ce6",
+    "order": [
+      "557c0ce6",
+      "2e304008"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "r102-goodwood-bellville/sat-02": {
+    "best": "557c0ce6",
+    "order": [
+      "557c0ce6",
+      "2e304008"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "r102-parow-cbd/tue-10": {
+    "best": "c410bb11",
+    "order": [
+      "c410bb11",
+      "eb3b7fb8",
+      "54de0524"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "r102-parow-cbd/sat-02": {
+    "best": "c410bb11",
+    "order": [
+      "c410bb11",
+      "eb3b7fb8",
+      "54de0524"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "m12-belhar-kuilsriver/tue-10": {
+    "best": "460b077d",
+    "order": [
+      "460b077d",
+      "add01340",
+      "f7375220"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "m12-belhar-kuilsriver/sat-02": {
+    "best": "460b077d",
+    "order": [
+      "460b077d",
+      "add01340",
+      "f7375220"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "m12-bellville-delft/tue-10": {
+    "best": "134b45e0",
+    "order": [
+      "134b45e0",
+      "cf9c7dbe",
+      "d30efa5d"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "m12-bellville-delft/sat-02": {
+    "best": "134b45e0",
+    "order": [
+      "134b45e0",
+      "cf9c7dbe",
+      "d30efa5d"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "r300-brackenfell-mitchellsplain/tue-10": {
+    "best": "2d0914f6",
+    "order": [
+      "2d0914f6",
+      "1d079c11",
+      "38e9a310"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "r300-brackenfell-mitchellsplain/sat-02": {
+    "best": "2d0914f6",
+    "order": [
+      "2d0914f6",
+      "1d079c11",
+      "38e9a310"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "r300-kuilsriver-ctia/tue-10": {
+    "best": "76a837fe",
+    "order": [
+      "76a837fe",
+      "8a2a19ac",
+      "6db450ac"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "r300-kuilsriver-ctia/sat-02": {
+    "best": "8a2a19ac",
+    "order": [
+      "8a2a19ac",
+      "76a837fe",
+      "6db450ac"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "r300-durbanville-strand/tue-10": {
+    "best": "551b2b25",
+    "order": [
+      "551b2b25",
+      "69ee657d"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "r300-durbanville-strand/sat-02": {
+    "best": "551b2b25",
+    "order": [
+      "551b2b25",
+      "69ee657d"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "r310-muizenberg-macassar/tue-10": {
+    "best": "9e651baf",
+    "order": [
+      "9e651baf"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "r310-muizenberg-macassar/sat-02": {
+    "best": "9e651baf",
+    "order": [
+      "9e651baf"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "r310-strandfontein-somersetwest/tue-10": {
+    "best": "92ac2767",
+    "order": [
+      "92ac2767",
+      "79a1ee1d",
+      "8e4d553a"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "r310-strandfontein-somersetwest/sat-02": {
+    "best": "92ac2767",
+    "order": [
+      "92ac2767",
+      "79a1ee1d",
+      "8e4d553a"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "r310-mitchellsplain-strand/tue-10": {
+    "best": "8379cd29",
+    "order": [
+      "8379cd29",
+      "aa933bf5",
+      "82f157bb"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "r310-mitchellsplain-strand/sat-02": {
+    "best": "8379cd29",
+    "order": [
+      "8379cd29",
+      "aa933bf5",
+      "82f157bb"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "m44-khayelitsha-ctia/tue-10": {
+    "best": "af809903",
+    "order": [
+      "af809903",
+      "f9b2dd74",
+      "d1e6a693"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "m44-khayelitsha-ctia/sat-02": {
+    "best": "af809903",
+    "order": [
+      "af809903",
+      "f9b2dd74",
+      "d1e6a693"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "m44-mitchellsplain-khayelitsha/tue-10": {
+    "best": "5709da95",
+    "order": [
+      "5709da95",
+      "1a9919ff"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "m44-mitchellsplain-khayelitsha/sat-02": {
+    "best": "5709da95",
+    "order": [
+      "5709da95",
+      "1a9919ff"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "x-nyanga-bluedowns/tue-10": {
+    "best": "fc76046a",
+    "order": [
+      "fc76046a",
+      "0d546fba",
+      "e8324a0c"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "x-nyanga-bluedowns/sat-02": {
+    "best": "fc76046a",
+    "order": [
+      "fc76046a",
+      "0d546fba",
+      "e8324a0c"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "x-gugulethu-bellville/tue-10": {
+    "best": "870bcf32",
+    "order": [
+      "870bcf32",
+      "84def87d",
+      "26cb3287"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "x-gugulethu-bellville/sat-02": {
+    "best": "870bcf32",
+    "order": [
+      "870bcf32",
+      "26cb3287",
+      "84def87d"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "ctl-seapoint-campsbay/tue-10": {
+    "best": "719d548d",
+    "order": [
+      "719d548d"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "ctl-constantia-claremont/tue-10": {
+    "best": "fba9025e",
+    "order": [
+      "fba9025e",
+      "ba40356e",
+      "f519337d"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "ctl-durbanville-bellville/tue-10": {
+    "best": "34f9bead",
+    "order": [
+      "34f9bead",
+      "15c0f361"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "ctl-rondebosch-cbd/tue-10": {
+    "best": "a77ce7ca",
+    "order": [
+      "a77ce7ca",
+      "1a89caf3"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "ctl-houtbay-constantia/tue-10": {
+    "best": "f93b6963",
+    "order": [
+      "f93b6963"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "ctl-bigbay-melkbos/tue-10": {
+    "best": "4ab4de90",
+    "order": [
+      "4ab4de90"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "ctl-parklands-sunningdale/tue-10": {
+    "best": "d005950a",
+    "order": [
+      "d005950a",
+      "fa1543e7"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  },
+  "ctl-stellenbosch-somersetwest/tue-10": {
+    "best": "17b769f7",
+    "order": [
+      "17b769f7"
+    ],
+    "rationale": "PROVISIONAL, machine-seeded: least avoid-tier km, then least km on corridors whose hours cover this scenario, then fastest. Replace with a human reading.",
+    "labelled_by": "halomaps-maintainers",
+    "labelled_on": "2026-09-21"
+  }
+}
