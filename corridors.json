@@ -27,14 +27,14 @@
       "id": "n7-melkbosstrand-killarney",
       "road": "N7 between Melkbosstrand and Killarney Gardens",
       "risk": 0.7,
-      "rationale": "AVOID tier. A dark, poorly lit freeway stretch worked from the settlements alongside it: attackers stone passing vehicles and lay objects across the carriageway to force a stop, then rob or hijack the stopped driver. Weekend Argus reports motorists warned off 'the N7 routes towards Potsdam Road, Malibongwe Drive and Sandown Road', stoned 'near the newly built interchange'; 2oceansvibe, citing News24, names 'the N7 between Melkbosstrand and the Milnerton off-ramps'. The hazard attaches to the road's permanent geometry, not to any one event. Nine of its cells have NO SAPS station within the 6 km allocation radius at all; the rest carry Table View's 0.184 as measured. Verified blind in production on 2026-09-20.",
+      "rationale": "AVOID tier. An unlit freeway stretch worked from the settlements alongside it after dark: attackers stone passing vehicles and lay objects across the carriageway to force a stop, then rob or hijack the stopped driver. The documented pattern is a night-time one. Weekend Argus warns motorists off the route 'in the evenings, especially during the load-shedding hours', and 2oceansvibe's witness puts it 'as soon as the lights go off' and 'especially from around two in the early hours of the morning'; daytime traffic is not what the sources describe. Weekend Argus reports motorists warned off 'the N7 routes towards Potsdam Road, Malibongwe Drive and Sandown Road', stoned 'near the newly built interchange'; 2oceansvibe, citing News24, names 'the N7 between Melkbosstrand and the Milnerton off-ramps'. The hazard attaches to the road's permanent geometry, not to any one event. Nine of its cells have NO SAPS station within the 6 km allocation radius at all; the rest carry Table View's 0.184 as measured. Verified blind in production on 2026-09-20.",
       "sources": [
         "https://iol.co.za/weekend-argus/news/2022-10-22-n7-crime-warning-to-drivers/",
         "https://www.2oceansvibe.com/2022/10/20/this-cape-town-highway-that-has-become-a-particularly-dangerous-load-shedding-crime-hotspot/",
         "https://www.capetown.gov.za/Media-and-news/Smash-and-grab%20reports%20highlight%20hotspots",
         "https://tabletalk.co.za/news/2024-07-24-n7-smash-and-grab-video-shocker/"
       ],
-      "reviewed_on": "2026-09-20",
+      "reviewed_on": "2026-09-22",
       "hours": [
         "18:00-05:59"
       ],
